@@ -13,6 +13,7 @@
 		AEFB07251A97B78F002A11A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFB07241A97B78F002A11A1 /* Images.xcassets */; };
 		AEFB07281A97B78F002A11A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEFB07261A97B78F002A11A1 /* LaunchScreen.xib */; };
 		AEFB07341A97B790002A11A1 /* BookCookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB07331A97B790002A11A1 /* BookCookTests.swift */; };
+		AEFB073F1A97B873002A11A1 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFB073E1A97B873002A11A1 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		AEFB072D1A97B790002A11A1 /* BookCookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookCookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFB07321A97B790002A11A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEFB07331A97B790002A11A1 /* BookCookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCookTests.swift; sourceTree = "<group>"; };
+		AEFB073E1A97B873002A11A1 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFB073F1A97B873002A11A1 /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		AEFB070F1A97B78F002A11A1 = {
 			isa = PBXGroup;
 			children = (
+				AEFB073E1A97B873002A11A1 /* Crashlytics.framework */,
 				AEFB071A1A97B78F002A11A1 /* BookCook */,
 				AEFB07301A97B790002A11A1 /* BookCookTests */,
 				AEFB07191A97B78F002A11A1 /* Products */,
@@ -122,6 +126,7 @@
 				AEFB07141A97B78F002A11A1 /* Sources */,
 				AEFB07151A97B78F002A11A1 /* Frameworks */,
 				AEFB07161A97B78F002A11A1 /* Resources */,
+				AEFB073D1A97B85F002A11A1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -206,6 +211,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEFB073D1A97B85F002A11A1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 1c6d125161cfd6155af441bc83d21a64632d815c 0bd63c3e7bccadb5a03117ce104a04e0040a7858af6c8bc5824aed3b65726fbd";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEFB07141A97B78F002A11A1 /* Sources */ = {
@@ -338,7 +359,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BookCook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,7 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BookCook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
