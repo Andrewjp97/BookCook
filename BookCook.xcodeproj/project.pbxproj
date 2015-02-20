@@ -21,6 +21,7 @@
 		AEFB07511A97C312002A11A1 /* RecipeBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB07501A97C312002A11A1 /* RecipeBook.swift */; };
 		AEFB07531A97C329002A11A1 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB07521A97C329002A11A1 /* Ingredient.swift */; };
 		AEFB07551A97C5C6002A11A1 /* IngredientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFB07541A97C5C6002A11A1 /* IngredientList.swift */; };
+		AEFB07571A97CAA7002A11A1 /* RecipeScreenMarkup.psd in Resources */ = {isa = PBXBuildFile; fileRef = AEFB07561A97CAA7002A11A1 /* RecipeScreenMarkup.psd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		AEFB07501A97C312002A11A1 /* RecipeBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeBook.swift; sourceTree = "<group>"; };
 		AEFB07521A97C329002A11A1 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		AEFB07541A97C5C6002A11A1 /* IngredientList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientList.swift; sourceTree = "<group>"; };
+		AEFB07561A97CAA7002A11A1 /* RecipeScreenMarkup.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = RecipeScreenMarkup.psd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		AEFB07491A97C258002A11A1 /* PSD */ = {
 			isa = PBXGroup;
 			children = (
+				AEFB07561A97CAA7002A11A1 /* RecipeScreenMarkup.psd */,
 			);
 			name = PSD;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				AEFB07231A97B78F002A11A1 /* Main.storyboard in Resources */,
 				AEFB07281A97B78F002A11A1 /* LaunchScreen.xib in Resources */,
 				AEFB07251A97B78F002A11A1 /* Images.xcassets in Resources */,
+				AEFB07571A97CAA7002A11A1 /* RecipeScreenMarkup.psd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +400,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,6 +437,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
